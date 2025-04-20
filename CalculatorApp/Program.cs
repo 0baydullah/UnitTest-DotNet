@@ -1,4 +1,6 @@
 ﻿
+using System.Diagnostics.CodeAnalysis;
+
 public interface ICalculator
 {
     int Add(int a, int b);
@@ -92,6 +94,7 @@ public class Member
 
 public class Program
 {
+    [ExcludeFromCodeCoverage]
     public static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
